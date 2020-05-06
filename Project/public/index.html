@@ -4,17 +4,17 @@
 	<title>3D Multiplayer Game</title>
 	<link rel='stylesheet' href="css/main.css" />
 	<script src="https://www.gstatic.com/firebasejs/3.0.0/firebase.js"></script>
-	<script src="js/lib/three.js"></script>
+	<!-- <script src="js/lib/three.js"></script> -->
+	<script src="https://threejs.org/build/three.min.js"></script>
 	<script src="js/lib/PlayerControls.js"></script>
+	<script src="https://threejs.org/examples/js/loaders/MTLLoader.js"></script>
+	<script src="https://threejs.org/examples/js/loaders/OBJLoader.js"></script>
+
 	<script>
 	  // Initialize Firebase
-	  var config = {
-	      apiKey: '<your-api-key>',
-	      authDomain: '<your-auth-domain>',
-	      databaseURL: '<your-database-url>',
-	      storageBucket: '<your-storage-bucket>'
-	    };
-	  firebase.initializeApp(config);
+
+
+	  firebase.initializeApp(firebaseConfig);
 
 	  var fbRef = firebase.database().ref("data");
 	</script>
